@@ -2,9 +2,10 @@
 import Link from "next/link"
 import { Youtube, Instagram, Linkedin, Mail, MapPin } from "lucide-react"
 import twitter from "@/public/icon/twitter.png"
+import Image from "next/image"
 
 export default function Footer() {
-    // @ts-ignore
+    
     return (
         <footer className="bg-black border-t border-gray-800 px-6 py-12 md:px-12">
             <div className="max-w-6xl mx-auto">
@@ -15,7 +16,7 @@ export default function Footer() {
                         <div className="flex items-center space-x-3 mb-4">
                             <div>
                                 <div>
-                                    <img src="/Logo.png" alt="logo" className="h-12 w-auto border-gray-700 border rounded"/>
+                                    <Image src="/Logo.png" alt="logo" width={48} height={48} className="h-12 w-auto border-gray-700 border rounded"/>
                                 </div>
                                 <p className="text-gray-400 text-sm py-5 font-light">Association of Computing Technology and Science</p>
                             </div>
@@ -116,7 +117,7 @@ export default function Footer() {
                                     rel="noopener noreferrer"
                                     className="w-9 h-9 bg-gray-800/50 hover:bg-red-600/20 border border-gray-700 hover:border-red-600/50 rounded-lg flex items-center justify-center transition-all duration-300 group"
                                 >
-                                    <img src={twitter.src} className="w-4 h-4 text-gray-400 group-hover:text-red-400 transition-colors" />
+                                    <Image src={twitter} alt="twitter" width={16} height={16} className="w-4 h-4 text-gray-400 group-hover:text-red-400 transition-colors" />
                                 </a>
                                 <a
                                     href="mailto:acts.edc@gmail.com"
